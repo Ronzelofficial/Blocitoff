@@ -1,0 +1,10 @@
+<h2>Your To-Do List</h2>
+
+<% if current_user %>
+<div class="col-md-8">
+        <%= render partial: 'items/item' %>
+    </div>
+    <div class="col-md-8">
+        <%= render partial: 'items/form' %>
+    </div>
+<% end %>

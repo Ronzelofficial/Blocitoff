@@ -1,0 +1,10 @@
+<% @user.items.each do |item| %>
+  <div class="media">
+    <div class="media-body">
+      <h4 class="media-heading">
+        <p><%= item.name %> <%= link_to "Delete", item, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %><%= distance_of_time_in_words(Time.now, item.created_at.to_date + 7 ) %>  left.</small>
+</p>
+      </h4>
+    </div>
+  </div>
+<% end %>

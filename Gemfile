@@ -21,6 +21,7 @@ group :development do
 end
 
 # Use Puma as the app server
+gem 'faker'
 gem 'puma', '~> 3.0'
 gem 'devise'
 # Use SCSS for stylesheets
